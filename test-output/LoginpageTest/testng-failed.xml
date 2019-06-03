@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [LoginpageTest]">
+  <test thread-count="5" name=" Browser Chrome(failed)">
+    <parameter name="myBrowser" value="chrome"/>
+    <parameter name="type_of_run" value="Head"/>
+    <classes>
+      <class name="com.sample.abc.Homepage">
+        <methods>
+          <include name="validateQuickDraft"/>
+          <include name="getBrowser"/>
+          <include name="validateNewBlog"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.sample.abc.Homepage -->
+    </classes>
+  </test> <!--  Browser Chrome(failed) -->
+  <test thread-count="5" name=" Browser Firefox(failed)">
+    <parameter name="myBrowser" value="Firefox"/>
+    <parameter name="type_of_run" value="Head"/>
+    <classes>
+      <class name="com.sample.abc.Homepage">
+        <methods>
+          <include name="validateQuickDraft"/>
+          <include name="getBrowser"/>
+          <include name="validateNewBlog"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.sample.abc.Homepage -->
+    </classes>
+  </test> <!--  Browser Firefox(failed) -->
+</suite> <!-- Failed suite [LoginpageTest] -->

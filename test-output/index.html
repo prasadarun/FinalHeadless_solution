@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 7 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-parallel">
+              <span class="suite-name border-failed">parallel</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-parallel">
+                    <span>TestNgparallel.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-parallel">
+                    <span class="test-stats">4 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-parallel">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-parallel">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-parallel">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-parallel">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-parallel">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">24 methods, 7 failed,   17 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-parallel" class="hide-methods failed suite-parallel"> (hide)</a> <!-- hide-methods failed suite-parallel -->
+                      <a href="#" panel-name="suite-parallel" class="show-methods failed suite-parallel"> (show)</a> <!-- show-methods failed suite-parallel -->
+                    </span>
+                    <div class="method-list-content failed suite-parallel">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-parallel" title="com.sample.abc.Homepage" hash-for-method="validateNewBlog">validateNewBlog</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-parallel" title="com.sample.abc.Homepage" hash-for-method="validateNewBlog">validateNewBlog</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-parallel" title="com.sample.abc.Homepage" hash-for-method="validateNewBlog">validateNewBlog</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-parallel" title="com.sample.abc.Homepage" hash-for-method="validateQuickDraft">validateQuickDraft</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-parallel" title="com.sample.abc.Homepage" hash-for-method="validateQuickDraft">validateQuickDraft</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-parallel" title="com.sample.abc.Homepage" hash-for-method="validateQuickDraft">validateQuickDraft</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-parallel" title="com.sample.abc.Homepage" hash-for-method="validateQuickDraft">validateQuickDraft</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-parallel -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-parallel" class="hide-methods passed suite-parallel"> (hide)</a> <!-- hide-methods passed suite-parallel -->
+                      <a href="#" panel-name="suite-parallel" class="show-methods passed suite-parallel"> (show)</a> <!-- show-methods passed suite-parallel -->
+                    </span>
+                    <div class="method-list-content passed suite-parallel">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-parallel" title="com.sample.abc.Loginpage" hash-for-method="validateLogo">validateLogo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-parallel" title="com.sample.abc.Loginpage" hash-for-method="validateLogo">validateLogo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-parallel" title="com.sample.abc.Loginpage" hash-for-method="validateLogo">validateLogo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-parallel" title="com.sample.abc.Loginpage" hash-for-method="validateLogo">validateLogo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-parallel" title="com.sample.abc.Homepage" hash-for-method="validateNewBlog">validateNewBlog</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-parallel" title="com.sample.abc.Loginpage" hash-for-method="validateincorrectlogin">validateincorrectlogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-parallel" title="com.sample.abc.Loginpage" hash-for-method="validateincorrectlogin">validateincorrectlogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-parallel" title="com.sample.abc.Loginpage" hash-for-method="validateincorrectlogin">validateincorrectlogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-parallel" title="com.sample.abc.Loginpage" hash-for-method="validateincorrectlogin">validateincorrectlogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-parallel" title="com.sample.abc.Homepage" hash-for-method="validatelogin">validatelogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-parallel" title="com.sample.abc.Loginpage" hash-for-method="validatelogin">validatelogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-parallel" title="com.sample.abc.Loginpage" hash-for-method="validatelogin">validatelogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-parallel" title="com.sample.abc.Homepage" hash-for-method="validatelogin">validatelogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-parallel" title="com.sample.abc.Homepage" hash-for-method="validatelogin">validatelogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-parallel" title="com.sample.abc.Loginpage" hash-for-method="validatelogin">validatelogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-parallel" title="com.sample.abc.Loginpage" hash-for-method="validatelogin">validatelogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-parallel" title="com.sample.abc.Homepage" hash-for-method="validatelogin">validatelogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-parallel -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-parallel" class="panel parallel">
+          <div class="suite-parallel-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.sample.abc.Homepage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateNewBlog">
+                  </a> <!-- validateNewBlog -->
+                  <span class="method-name">validateNewBlog</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate a node using //a[@class=&apos;welcome-icon welcome-add-page&apos;]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Sowbhas-iMac.local&apos;, ip: &apos;10.79.0.23&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: driver.version: HtmlUnitDriver
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver.findElementByXPath(HtmlUnitDriver.java:1408)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver$4.call(HtmlUnitDriver.java:2024)
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver$4.call(HtmlUnitDriver.java:2020)
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver.implicitlyWaitFor(HtmlUnitDriver.java:1660)
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver.findElement(HtmlUnitDriver.java:2020)
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver.findElement(HtmlUnitDriver.java:798)
+	at com.sample.abc.Homepage.validateNewBlog(Homepage.java:114)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateNewBlog">
+                  </a> <!-- validateNewBlog -->
+                  <span class="method-name">validateNewBlog</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: You may only interact with visible elements
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Sowbhas-iMac.local&apos;, ip: &apos;10.79.0.23&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.htmlunit.HtmlUnitWebElement.verifyCanInteractWithElement(HtmlUnitWebElement.java:260)
+	at org.openqa.selenium.htmlunit.HtmlUnitWebElement.click(HtmlUnitWebElement.java:135)
+	at com.sample.abc.Homepage.validateNewBlog(Homepage.java:114)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateNewBlog">
+                  </a> <!-- validateNewBlog -->
+                  <span class="method-name">validateNewBlog</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: Element &lt;a class=&quot;welcome-icon welcome-add-page&quot; href=&quot;https://s1.demo.opensourcecms.com/wordpress/wp-admin/post-new.php?post_type=page&quot;&gt; could not be scrolled into view
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Sowbhas-iMac.local&apos;, ip: &apos;10.79.0.23&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 64.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 58244, moz:profile: /var/folders/kw/37dwzp7n23q..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 16.7.0, rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 483459d6-0bf4-9745-9f6c-f88adbf7bc44
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.sample.abc.Homepage.validateNewBlog(Homepage.java:114)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateQuickDraft">
+                  </a> <!-- validateQuickDraft -->
+                  <span class="method-name">validateQuickDraft</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: You may only interact with visible elements
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Sowbhas-iMac.local&apos;, ip: &apos;10.79.0.23&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.htmlunit.HtmlUnitWebElement.verifyCanInteractWithElement(HtmlUnitWebElement.java:260)
+	at org.openqa.selenium.htmlunit.HtmlUnitWebElement.click(HtmlUnitWebElement.java:135)
+	at com.sample.abc.Homepage.validateQuickDraft(Homepage.java:126)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateQuickDraft">
+                  </a> <!-- validateQuickDraft -->
+                  <span class="method-name">validateQuickDraft</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: You may only interact with visible elements
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Sowbhas-iMac.local&apos;, ip: &apos;10.79.0.23&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.htmlunit.HtmlUnitWebElement.verifyCanInteractWithElement(HtmlUnitWebElement.java:260)
+	at org.openqa.selenium.htmlunit.HtmlUnitWebElement.click(HtmlUnitWebElement.java:135)
+	at com.sample.abc.Homepage.validateQuickDraft(Homepage.java:126)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateQuickDraft">
+                  </a> <!-- validateQuickDraft -->
+                  <span class="method-name">validateQuickDraft</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: Element &lt;input id=&quot;title&quot; name=&quot;post_title&quot; type=&quot;text&quot;&gt; could not be scrolled into view
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Sowbhas-iMac.local&apos;, ip: &apos;10.79.0.23&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 64.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 58255, moz:profile: /var/folders/kw/37dwzp7n23q..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 16.7.0, rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f5ff5700-7c42-4e41-bc78-4a3c0b3d0759
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.sample.abc.Homepage.validateQuickDraft(Homepage.java:126)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateQuickDraft">
+                  </a> <!-- validateQuickDraft -->
+                  <span class="method-name">validateQuickDraft</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: Element &lt;input id=&quot;title&quot; name=&quot;post_title&quot; type=&quot;text&quot;&gt; could not be scrolled into view
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Sowbhas-iMac.local&apos;, ip: &apos;10.79.0.23&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 64.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 58299, moz:profile: /var/folders/kw/37dwzp7n23q..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 16.7.0, rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 693a3851-6fb0-2c4f-a7ff-b4d01948eadf
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.sample.abc.Homepage.validateQuickDraft(Homepage.java:126)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-parallel-class-failed -->
+          <div class="suite-parallel-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.sample.abc.Homepage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateNewBlog">
+                  </a> <!-- validateNewBlog -->
+                  <span class="method-name">validateNewBlog</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatelogin">
+                  </a> <!-- validatelogin -->
+                  <span class="method-name">validatelogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatelogin">
+                  </a> <!-- validatelogin -->
+                  <span class="method-name">validatelogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatelogin">
+                  </a> <!-- validatelogin -->
+                  <span class="method-name">validatelogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatelogin">
+                  </a> <!-- validatelogin -->
+                  <span class="method-name">validatelogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-parallel-class-passed -->
+          <div class="suite-parallel-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.sample.abc.Loginpage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateLogo">
+                  </a> <!-- validateLogo -->
+                  <span class="method-name">validateLogo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateLogo">
+                  </a> <!-- validateLogo -->
+                  <span class="method-name">validateLogo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateLogo">
+                  </a> <!-- validateLogo -->
+                  <span class="method-name">validateLogo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateLogo">
+                  </a> <!-- validateLogo -->
+                  <span class="method-name">validateLogo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateincorrectlogin">
+                  </a> <!-- validateincorrectlogin -->
+                  <span class="method-name">validateincorrectlogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateincorrectlogin">
+                  </a> <!-- validateincorrectlogin -->
+                  <span class="method-name">validateincorrectlogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateincorrectlogin">
+                  </a> <!-- validateincorrectlogin -->
+                  <span class="method-name">validateincorrectlogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateincorrectlogin">
+                  </a> <!-- validateincorrectlogin -->
+                  <span class="method-name">validateincorrectlogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatelogin">
+                  </a> <!-- validatelogin -->
+                  <span class="method-name">validatelogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatelogin">
+                  </a> <!-- validatelogin -->
+                  <span class="method-name">validatelogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatelogin">
+                  </a> <!-- validatelogin -->
+                  <span class="method-name">validatelogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatelogin">
+                  </a> <!-- validatelogin -->
+                  <span class="method-name">validatelogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-parallel-class-passed -->
+        </div> <!-- panel parallel -->
+        <div panel-name="test-xml-parallel" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/durga/eclipse-workspace/Headless_Solution/TestNgparallel.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;3&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;parallel&quot; parallel=&quot;classes&quot;&gt;
+  &lt;test thread-count=&quot;3&quot; name=&quot;ParallelTest1 Browser Chrome&quot; parallel=&quot;classes&quot;&gt;
+    &lt;parameter name=&quot;myBrowser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;type_of_run&quot; value=&quot;Headless&quot;/&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;com.sample.abc&quot;/&gt;
+    &lt;/packages&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.sample.abc.Homepage&quot;/&gt;
+      &lt;class name=&quot;com.sample.abc.Loginpage&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ParallelTest1 Browser Chrome --&gt;
+  &lt;test thread-count=&quot;3&quot; name=&quot;ParallelTest2 Browser Firefox&quot; parallel=&quot;classes&quot;&gt;
+    &lt;parameter name=&quot;myBrowser&quot; value=&quot;Firefox&quot;/&gt;
+    &lt;parameter name=&quot;type_of_run&quot; value=&quot;Headless&quot;/&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;com.sample.abc&quot;/&gt;
+    &lt;/packages&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.sample.abc.Homepage&quot;/&gt;
+      &lt;class name=&quot;com.sample.abc.Loginpage&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ParallelTest2 Browser Firefox --&gt;
+  &lt;test thread-count=&quot;3&quot; name=&quot;ParallelTest3 Browser Firefox&quot; parallel=&quot;classes&quot;&gt;
+    &lt;parameter name=&quot;myBrowser&quot; value=&quot;Firefox&quot;/&gt;
+    &lt;parameter name=&quot;type_of_run&quot; value=&quot;Head&quot;/&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;com.sample.abc&quot;/&gt;
+    &lt;/packages&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.sample.abc.Homepage&quot;/&gt;
+      &lt;class name=&quot;com.sample.abc.Loginpage&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ParallelTest3 Browser Firefox --&gt;
+  &lt;test thread-count=&quot;3&quot; name=&quot;ParallelTest4 Browser Firefox&quot; parallel=&quot;classes&quot;&gt;
+    &lt;parameter name=&quot;myBrowser&quot; value=&quot;Firefox&quot;/&gt;
+    &lt;parameter name=&quot;type_of_run&quot; value=&quot;Head&quot;/&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;com.sample.abc&quot;/&gt;
+    &lt;/packages&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.sample.abc.Homepage&quot;/&gt;
+      &lt;class name=&quot;com.sample.abc.Loginpage&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ParallelTest4 Browser Firefox --&gt;
+&lt;/suite&gt; &lt;!-- parallel --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-parallel" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for parallel</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">ParallelTest1 Browser Chrome (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">ParallelTest2 Browser Firefox (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">ParallelTest3 Browser Firefox (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">ParallelTest4 Browser Firefox (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-parallel" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for parallel</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-parallel" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for parallel</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_parallel');
+function tableData_parallel() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(24);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'validateNewBlog')
+data.setCell(0, 2, 'com.sample.abc.Homepage')
+data.setCell(0, 3, 8731);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'validateNewBlog')
+data.setCell(1, 2, 'com.sample.abc.Homepage')
+data.setCell(1, 3, 4967);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'validateQuickDraft')
+data.setCell(2, 2, 'com.sample.abc.Homepage')
+data.setCell(2, 3, 4535);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'validateNewBlog')
+data.setCell(3, 2, 'com.sample.abc.Homepage')
+data.setCell(3, 3, 4058);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'validatelogin')
+data.setCell(4, 2, 'com.sample.abc.Loginpage')
+data.setCell(4, 3, 3763);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'validateNewBlog')
+data.setCell(5, 2, 'com.sample.abc.Homepage')
+data.setCell(5, 3, 3642);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'validatelogin')
+data.setCell(6, 2, 'com.sample.abc.Homepage')
+data.setCell(6, 3, 3554);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'validateQuickDraft')
+data.setCell(7, 2, 'com.sample.abc.Homepage')
+data.setCell(7, 3, 3532);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'validateQuickDraft')
+data.setCell(8, 2, 'com.sample.abc.Homepage')
+data.setCell(8, 3, 3527);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'validateQuickDraft')
+data.setCell(9, 2, 'com.sample.abc.Homepage')
+data.setCell(9, 3, 3464);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'validatelogin')
+data.setCell(10, 2, 'com.sample.abc.Homepage')
+data.setCell(10, 3, 2982);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'validatelogin')
+data.setCell(11, 2, 'com.sample.abc.Loginpage')
+data.setCell(11, 3, 2916);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'validatelogin')
+data.setCell(12, 2, 'com.sample.abc.Loginpage')
+data.setCell(12, 3, 1590);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'validatelogin')
+data.setCell(13, 2, 'com.sample.abc.Homepage')
+data.setCell(13, 3, 1495);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'validatelogin')
+data.setCell(14, 2, 'com.sample.abc.Homepage')
+data.setCell(14, 3, 1442);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'validatelogin')
+data.setCell(15, 2, 'com.sample.abc.Loginpage')
+data.setCell(15, 3, 1440);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'validateincorrectlogin')
+data.setCell(16, 2, 'com.sample.abc.Loginpage')
+data.setCell(16, 3, 1204);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'validateincorrectlogin')
+data.setCell(17, 2, 'com.sample.abc.Loginpage')
+data.setCell(17, 3, 1201);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'validateincorrectlogin')
+data.setCell(18, 2, 'com.sample.abc.Loginpage')
+data.setCell(18, 3, 187);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'validateincorrectlogin')
+data.setCell(19, 2, 'com.sample.abc.Loginpage')
+data.setCell(19, 3, 173);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'validateLogo')
+data.setCell(20, 2, 'com.sample.abc.Loginpage')
+data.setCell(20, 3, 141);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'validateLogo')
+data.setCell(21, 2, 'com.sample.abc.Loginpage')
+data.setCell(21, 3, 70);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'validateLogo')
+data.setCell(22, 2, 'com.sample.abc.Loginpage')
+data.setCell(22, 3, 8);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'validateLogo')
+data.setCell(23, 2, 'com.sample.abc.Loginpage')
+data.setCell(23, 3, 7);
+window.suiteTableData['parallel']= { tableData: data, tableDiv: 'times-div-parallel'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 58 seconds</span>
+              <div id="times-div-parallel">
+              </div> <!-- times-div-parallel -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-parallel" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for parallel</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-parallel" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-parallel" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sample.abc.Homepage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">getBrowser(chrome, Headless)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateNewBlog</span>
+                <span class="method-start">5685 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">9334 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">getBrowser(chrome, Headless)</span>
+                <span class="method-start">9341 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateQuickDraft</span>
+                <span class="method-start">11839 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">16376 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">getBrowser(chrome, Headless)</span>
+                <span class="method-start">16379 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validatelogin</span>
+                <span class="method-start">17969 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">19466 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sample.abc.Loginpage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">getBrowser(chrome, Headless)</span>
+                <span class="method-start">19473 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validatelogin</span>
+                <span class="method-start">21440 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">23032 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">getBrowser(chrome, Headless)</span>
+                <span class="method-start">23035 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateincorrectlogin</span>
+                <span class="method-start">24475 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">24664 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">getBrowser(chrome, Headless)</span>
+                <span class="method-start">24669 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateLogo</span>
+                <span class="method-start">26125 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">26134 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sample.abc.Homepage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">getBrowser(Firefox, Headless)</span>
+                <span class="method-start">26191 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateNewBlog</span>
+                <span class="method-start">29318 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">33377 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">getBrowser(Firefox, Headless)</span>
+                <span class="method-start">33379 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateQuickDraft</span>
+                <span class="method-start">35241 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">38706 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">getBrowser(Firefox, Headless)</span>
+                <span class="method-start">38709 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validatelogin</span>
+                <span class="method-start">41468 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">42912 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sample.abc.Loginpage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">getBrowser(Firefox, Headless)</span>
+                <span class="method-start">42916 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validatelogin</span>
+                <span class="method-start">44692 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">46133 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">getBrowser(Firefox, Headless)</span>
+                <span class="method-start">46136 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateincorrectlogin</span>
+                <span class="method-start">48087 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">48261 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">getBrowser(Firefox, Headless)</span>
+                <span class="method-start">48265 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateLogo</span>
+                <span class="method-start">50432 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">50440 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sample.abc.Homepage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">getBrowser(Firefox, Head)</span>
+                <span class="method-start">50463 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateNewBlog</span>
+                <span class="method-start">86309 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">91278 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">getBrowser(Firefox, Head)</span>
+                <span class="method-start">93174 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateQuickDraft</span>
+                <span class="method-start">102163 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">105697 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">getBrowser(Firefox, Head)</span>
+                <span class="method-start">106466 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validatelogin</span>
+                <span class="method-start">115234 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">118217 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sample.abc.Loginpage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">getBrowser(Firefox, Head)</span>
+                <span class="method-start">119072 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validatelogin</span>
+                <span class="method-start">127124 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">130041 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">getBrowser(Firefox, Head)</span>
+                <span class="method-start">130770 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateincorrectlogin</span>
+                <span class="method-start">138187 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">139392 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">getBrowser(Firefox, Head)</span>
+                <span class="method-start">140101 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateLogo</span>
+                <span class="method-start">147648 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">147791 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sample.abc.Homepage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">getBrowser(Firefox, Head)</span>
+                <span class="method-start">148555 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateNewBlog</span>
+                <span class="method-start">155050 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">163782 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">getBrowser(Firefox, Head)</span>
+                <span class="method-start">165421 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateQuickDraft</span>
+                <span class="method-start">173878 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">177406 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">getBrowser(Firefox, Head)</span>
+                <span class="method-start">178180 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validatelogin</span>
+                <span class="method-start">184591 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">188146 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sample.abc.Loginpage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">getBrowser(Firefox, Head)</span>
+                <span class="method-start">188910 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validatelogin</span>
+                <span class="method-start">195205 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">198969 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">getBrowser(Firefox, Head)</span>
+                <span class="method-start">199731 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateincorrectlogin</span>
+                <span class="method-start">205989 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">207191 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">getBrowser(Firefox, Head)</span>
+                <span class="method-start">207915 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateLogo</span>
+                <span class="method-start">214598 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">214670 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

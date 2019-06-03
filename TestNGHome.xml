@@ -1,0 +1,20 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "LoginpageTest">
+<test name=" Browser Chrome">
+		<parameter name="myBrowser" value="chrome" />
+		<parameter name="type_of_run" value="Head" />
+		<classes>
+		<class name="com.sample.abc.Homepage" />
+		</classes>
+	</test> 
+	
+	 <test name=" Browser Firefox">
+		<parameter name="myBrowser" value="Firefox" />
+		<parameter name="type_of_run" value="Head" />
+		<classes>
+		<class name="com.sample.abc.Homepage" />
+		</classes>
+	</test>  
+</suite>  	

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="parallel" parallel="classes" thread-count="3" >
+
+	<test name="ParallelTest1 Browser Chrome">
+		<parameter name="myBrowser" value="chrome" />
+		<parameter name="type_of_run" value="Headless" />
+		 <packages>
+            <package name="com.sample.abc"/>
+        </packages>
+	</test> <!-- Test -->
+
+	<test name="ParallelTest2 Browser Firefox">
+		<parameter name="myBrowser" value="Firefox" />
+		<parameter name="type_of_run" value="Headless" />
+		 <packages>
+            <package name="com.sample.abc"/>
+        </packages>
+	</test> <!-- Test -->
+	
+	<test name="ParallelTest3 Browser Firefox">
+		<parameter name="myBrowser" value="Firefox" />
+		<parameter name="type_of_run" value="Head" />
+		 <packages>
+            <package name="com.sample.abc"/>
+        </packages>
+	</test> <!-- Test -->
+	
+	<test name="ParallelTest4 Browser Chrome">
+		<parameter name="myBrowser" value="Chrome" />
+		<parameter name="type_of_run" value="Head" />
+		 <packages>
+            <package name="com.sample.abc"/>
+        </packages>
+	</test> <!-- Test -->
+</suite> 
