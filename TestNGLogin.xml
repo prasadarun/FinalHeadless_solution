@@ -4,7 +4,7 @@
 <suite name = "LoginpageTest">
 <test name=" Browser Chrome">
 		<parameter name="myBrowser" value="chrome" />
-		<parameter name="type_of_run" value="Head" />
+		<parameter name="type_of_run" value="Headless" />
 		<classes>
 		<class name="com.sample.abc.Loginpage" />
 		</classes>
@@ -12,7 +12,7 @@
 	
 	<test name=" Browser Firefox">
 		<parameter name="myBrowser" value="Firefox" />
-		<parameter name="type_of_run" value="Head" />
+		<parameter name="type_of_run" value="Headless" />
 		<classes>
 		<class name="com.sample.abc.Loginpage" />
 		</classes>
